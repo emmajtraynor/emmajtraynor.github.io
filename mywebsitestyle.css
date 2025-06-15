@@ -1,0 +1,240 @@
+/*font family*/
+.merriweather-<uniquifier> {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #b7d7e8
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/*removing underline and blue from links across page*/
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*set up menu styling*/
+.menu{
+    background: #b7d7e8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+/*Makes it so that hovering over menu changes color*/
+.menu a:hover {
+  color: #171f34;
+  /*text-decoration: underline;*/
+}
+
+/*keep setting up menu*/
+.menu-links {
+    display: flex;
+    padding-right: 0px;
+    align-items: center;
+    gap: 60px;
+    padding-top: 5px;
+}
+
+/*logo settings*/
+.logo {
+    padding-right: 10px;
+    padding-left: 40px;
+    padding-top:10px
+}
+
+/*add main part of home page*/
+.hero {
+    height: 80vh;
+    color: #87bdd8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    text-align: flex-start;
+
+    background-color: white;
+    max-width: 800px;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.main-name {
+    font-size: 40pt;
+    color: #171f34;
+    text-align: left;    
+}
+
+.main-subtitle {
+    font-size:15pt;
+    color: #171f34;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.profile-pic {
+    padding: 10px;
+}
+
+.footer {
+    background: #87bdd8;
+    color: white;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.contact {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.contact a:hover {
+    color: #171f34;
+}
+
+.copyright {
+    font-size: 15pt;
+    padding-left: 20px
+}
+
+/*About page styling*/
+.about-page-head {
+    height: 50vh;
+    color: #171f34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    text-align: center;
+}
+
+/*About page styling*/
+.art-page-head {
+    height: 50vh;
+    color: #171f34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .logo {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero, .about-page-head, .art-page-head {
+    flex-direction: column;
+    padding: 20px;
+    width: 95%;
+    height: auto;
+  }
+
+  .main-name {
+    font-size: 28pt;
+    text-align: center;
+  }
+
+  .main-subtitle {
+    font-size: 14pt;
+  }
+
+  .profile-pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .contact a {
+    font-size: 16pt;
+  }
+
+  .copyright {
+    font-size: 12pt;
+    padding-left: 10px;
+  }
+
+  .profile-pic img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+}
